@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/manu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_toRightOf="@id/ivAvatar"
+        android:text="Man Utd"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_20sdp" />
+
+    <RelativeLayout
+        android:id="@+id/rlLogin"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/ivAvatar"
+        android:layout_marginLeft="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/ivlogout"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_logout" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/ivlogout"
+            android:layout_toRightOf="@+id/ivlogout"
+            android:gravity="center"
+            android:text="Log Out"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
